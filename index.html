@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/1265f52c3f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- announcement bar -->
+    <div class="announcement-bar">Announce something here</div>
+
+    <!-- header -->
+    <header>
+      <!-- search bar -->
+      <div class="search-section">
+        <div class="search-box">
+          <span>Search</span>
+          <input type="text" class="search-input" />
+          <button class="searchbar-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <!-- logo banner -->
+      <div class="banner">
+        <div>
+          <button id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+          <button id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <!-- logo -->
+        <h1>LOGO</h1>
+        <div>
+          <button id="mobileSearchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button id="showCartBtn">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <div class="cart-qty">0</div>
+          </button>
+        </div>
+      </div>
+
+      <!-- nav -->
+
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>
+            About
+            <!-- <div class="nav-links">
+                        <a href="">Our Story</a>
+                        <a href="">Blog</a>
+                        <a href="">Contact</a>
+                    </div> -->
+          </li>
+          <li>Shop</li>
+          <li>Blog</li>
+          <li>FAQ</li>
+        </ul>
+      </nav>
+      <!-- end of nav -->
+    </header>
+    <!-- end of header -->
+
+    <!-- main section -->
+    <main>
+      <!-- slideshow section -->
+      <section class="slider">
+        <div class="slideshow">
+          <div class="slide">
+            <img src="image\slideshow-image-01.jpg" alt="slideshow-image" />
+
+            <div class="slideshow-content">
+              <h1>Slide title.</h1>
+              <p>Tell your story</p>
+              <button class="primary-btn">Learn More</button>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="image\slideshow-image-02.jpg" alt="slideshow-image" />
+
+            <div class="slideshow-content">
+              <h1>2</h1>
+              <p>The second slide</p>
+              <button class="primary-btn">Learn More</button>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="image\slideshow-image-03.jpg" alt="slideshow-image" />
+
+            <div class="slideshow-content">
+              <h1>3</h1>
+              <p>The third slide</p>
+              <button class="primary-btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- slider control btn -->
+        <div class="slideshow-controls">
+          <button id="slidePreBtn">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <p id="slideNumber">1/3</p>
+          <button id="slideNextBtn">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- featured collection -->
+      <section class="collection" data-aos="fade-up">
+        <h1>Featured Collection</h1>
+        <div class="featured-collection"></div>
+      </section>
+
+      <!-- press testimonial -->
+
+      <section class="press-section">
+        <div class="press">
+          <div class="press-testimonial">
+            <img src="image\press-image-forbes.webp" alt="forbes-logo" />
+            <p>
+              "Write some content about what they are saying about your store."
+            </p>
+          </div>
+
+          <div class="press-testimonial">
+            <img src="image\press-image-gq.webp" alt="gq-logo" />
+            <p>
+              "Write some content about what they are saying about your store."
+            </p>
+          </div>
+
+          <div class="press-testimonial">
+            <img
+              src="image\press-image-men_shealth.webp"
+              alt="mens-health-logo"
+            />
+            <p>
+              "Write some content about what they are saying about your store."
+            </p>
+          </div>
+
+          <div class="press-testimonial">
+            <img src="image\press-image-themanual.webp" alt="the-manual-logo" />
+            <p>
+              "Write some content about what they are saying about your store."
+            </p>
+          </div>
+        </div>
+
+        <!-- control btn on mobile -->
+        <div class="press-controls"></div>
+      </section>
+
+      <!-- image with text -->
+      <section class="image-with-text">
+        <div class="image-with-text-left">
+          <img src="image\image-with-text-01.jpg" alt="" />
+          <div class="item">
+            <h1>Image with text</h1>
+            <p>
+              Use image with text to give your customers insight into your
+              brand. Select imagery and text that relates to your style and
+              story.
+            </p>
+            <button class="primary-btn">Shop now</button>
+          </div>
+        </div>
+
+        <div class="image-with-text-right">
+          <div class="item">
+            <h1>Image with text</h1>
+            <p>
+              Use image with text to give your customers insight into your
+              brand. Select imagery and text that relates to your style and
+              story.
+            </p>
+            <button class="primary-btn">Shop now</button>
+          </div>
+          <img src="image\image-with-text-02.jpg" alt="" />
+        </div>
+
+        <div class="image-with-text-left">
+          <img src="image\image-with-text-03.jpg" alt="" />
+          <div class="item">
+            <h1>Image with text</h1>
+            <p>
+              Use image with text to give your customers insight into your
+              brand. Select imagery and text that relates to your style and
+              story.
+            </p>
+            <button class="primary-btn">Shop now</button>
+          </div>
+        </div>
+
+        <div class="image-with-text-right">
+          <div class="item">
+            <h1>Image with text</h1>
+            <p>
+              Use image with text to give your customers insight into your
+              brand. Select imagery and text that relates to your style and
+              story.
+            </p>
+            <button class="primary-btn">Shop now</button>
+          </div>
+          <img src="image\image-with-text-04.jpg" alt="" />
+        </div>
+      </section>
+      <!-- end of image with text section -->
+
+      <!-- text with icons -->
+      <section class="text-with-icons">
+        <div class="item">
+          <img src="image\text-with-icons-01.avif" alt="" />
+          <h2>Your title</h2>
+          <p>Short content about your store</p>
+        </div>
+
+        <div class="item">
+          <img src="image\text-with-icons-02.avif" alt="" />
+          <h2>Your title</h2>
+          <p>Short content about your store</p>
+        </div>
+
+        <div class="item">
+          <img src="image\text-with-icons-03.webp" alt="" />
+          <h2>Your title</h2>
+          <p>Short content about your store</p>
+        </div>
+
+        <div class="item">
+          <img src="image\text-with-icons-04.webp" alt="" />
+          <h2>Your title</h2>
+          <p>Short content about your store</p>
+        </div>
+      </section>
+      <!-- end of image with icons section -->
+
+      <!-- image with text block -->
+      <section class="image-with-text-block">
+        <div
+          class="image-block"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <div class="color-block">
+            <img src="image\image-with-text-block.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="text-block" data-aos="fade-left">
+          <h2>Image with text block</h2>
+          <p>
+            Use block text to give your customers insight into your brand.
+            Select impactful text that relates to your brand and story.
+          </p>
+          <button class="primary-btn">Learn More</button>
+        </div>
+      </section>
+      <!-- end of image with text block section -->
+    </main>
+    <!-- end of main section -->
+
+    <!-- shopping cart -->
+    <section class="shopping-cart">
+      <div class="empty-cart">
+        <h3>Your cart is empty</h3>
+        <button>Continue shopping</button>
+      </div>
+
+      <div>
+        <div class="cart-header">
+          <h1>Your cart</h1>
+          <button id="closeCartBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="cart-title">
+          <p>PRODUCT</p>
+          <p>TOTAL</p>
+        </div>
+        <div class="cart-item-container"></div>
+      </div>
+
+      <div class="cart-footer">
+        <div class="subtotal">
+          <h3>Subtotal</h3>
+          <p>$USD</p>
+        </div>
+
+        <p>Taxes and shipping calculated at checkout</p>
+        <button>Check out</button>
+      </div>
+    </section>
+    <!-- end of shopping cart -->
+
+    <!-- footer -->
+    <footer>
+      <h1>Subscribe to our newsletter</h1>
+      <p>Promotions, new products and sales. Directly to your inbox.</p>
+      <div class="newsletter">
+        <input type="email" /><span>Email</span>
+        <button><i class="fa-solid fa-right-long"></i></button>
+      </div>
+
+      <div class="footer-menu">
+        <div class="footer-block">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-block">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-block">
+          <h3>About our store</h3>
+          <p>
+            Use this text area to tell your customers about your brand and
+            vision.
+          </p>
+        </div>
+
+        <div class="footer-block">
+          <h1>LOGO</h1>
+        </div>
+      </div>
+
+      <div class="social-media">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div>
+        <p>Made with ❤ by Frances Wong. Thank you for your time!</p>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+    <script src="shoppingCart.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
